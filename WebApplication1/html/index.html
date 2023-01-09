@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+</head>
+<body>
+    <input class="diameterInput" type="text" placeholder="Диаметр" />
+    <input class="widthInput" type="text" placeholder="Ширина"/>
+    <button class="diameterr">Узнать</button>
+    <br />
+    <br />
+    <br />
+    <input class="A" type="text" placeholder="a" />
+    <input class="B" type="text" placeholder="b" />
+    <input class="C" type="text" placeholder="c" />
+    <button class="perimeter">Узнать</button>
+
+    <script>
+        let diameterBtn = document.querySelector(".diameterr")
+        let widthInput = document.querySelector(".widthInput")
+        let diameterInput = document.querySelector(".diameterInput")
+        diameterBtn.addEventListener("click", () => {
+            window.location.href = "diameter/" + diameterInput.value + "/" + widthInput.value
+        })
+
+        let A = document.querySelector(".A")
+        let B = document.querySelector(".B")
+        let C = document.querySelector(".C")
+        let perimeterBtn = document.querySelector(".perimeter")
+
+        perimeterBtn.addEventListener("click", () => {
+            window.location.href = "know/" + A.value + "/" + B.value + "/" + C.value
+        })
+
+    </script>
+</body>
+</html>
